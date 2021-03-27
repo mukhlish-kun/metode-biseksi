@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Biseksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row mt-2 mx-1 font-weight-bold">
+            Nama : Fatkhul Mukhlish A<br>
+            NIM : 221810299 <br>
+            Kelas : 3SI1
+        </div>
+        <hr>
+        <hr>
+        <h3 class="mb-4 mx-1 font-weight-bold">Metode biseksi untuk fungsi: X<sup>3</sup>+X<sup>2</sup>+3X-3=0</h3>
+        <div class="row mx-1">
+            <div class="col-md-3">
+                <label for="a">Batas bawah a :</label>
+                <input class="form-control my-1" type="number" name="a" id="a" placeholder="Input batas bawah a"
+                    required>
+            </div>
+
+        </div>
+        <div class="row mx-1">
+            <div class="col-md-3">
+                <label class="d-inline-block" for="b">Batas atas b :</label>
+                <input class="form-control my-1" type="number" name="b" id="b" placeholder="Input batas atas b"
+                    required>
+            </div>
+
+        </div>
+        <div class="row mx-1">
+            <div class="col-md-3">
+               <label for="tol">Toleransi error :</label>
+            <input class="form-control my-1" type="number" name="tol" id="tol" step="any"
+                placeholder="Input nilai toleransi" required> 
+            </div>
+            
+        </div>
+        <div class="row mx-1">
+            <div class="col-md-3">
+                <button id="eksekusi" class="btn btn-block btn-success align-text-bottom" onclick="proses();">Eksekusi</button>
+            </div>
+            
+        </div>
+        <div class="row mx-1">
+            <small class="text-danger mx-3" id="error"></small>
+        </div>
+
+        <div class="row mx-1">
+            <table class="table my-4 mx-1 table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Iterasi</th>
+                        <th scope="col">a</th>
+                        <th scope="col">b</th>
+                        <th scope="col">x</th>
+                        <th scope="col">f(x)</th>
+                        <th scope="col">f(b)</th>
+                        <th scope="col">f(a)</th>
+                        <th scope="col">Error</th>
+                    </tr>
+                </thead>
+                <tbody id="isi-table">
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
